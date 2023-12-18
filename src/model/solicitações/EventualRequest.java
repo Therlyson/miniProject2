@@ -51,4 +51,5 @@ public class EventualRequest extends Request{
                 ", Data inicial: " + initial_date +
                 ", Data final: " + final_date;
     }
+
 }

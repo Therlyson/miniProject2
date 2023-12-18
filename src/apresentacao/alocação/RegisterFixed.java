@@ -203,6 +203,7 @@ public class RegisterFixed extends JFrame{
         if(!tipo.isEmpty() && !capacidade.isEmpty() && !nome.isEmpty() && !Localizacao.isEmpty() && !horario.isEmpty()
         && !Ano.isEmpty() && !semestre.isEmpty() && !curso.isEmpty() && !qtd_vagas.isEmpty() && !dataAtual.isEmpty()
         && !disciplina.isEmpty()){
+
             try{
                 int capacity = Integer.parseInt(capacidade);
                 Espaco espacoFisico = new Espaco(tipo, capacity, nome, Localizacao);

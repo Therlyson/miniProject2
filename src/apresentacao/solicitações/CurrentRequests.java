@@ -42,6 +42,7 @@ public class CurrentRequests extends JFrame {
         setVisible(true);
     }
 
+
     private void btnVoltar(ActionEvent actionEvent) {
         this.dispose();
     }

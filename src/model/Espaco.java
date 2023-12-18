@@ -13,6 +13,7 @@ public class Espaco {
         this.location = location;
     }
 
+
     public String getType() {
         return type;
     }

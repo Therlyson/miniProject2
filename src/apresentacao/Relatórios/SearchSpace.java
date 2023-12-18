@@ -49,6 +49,7 @@ public class SearchSpace extends JFrame {
         add(voltar);
         voltar.addActionListener(this::btnVoltar);
 
+
         setLocationRelativeTo(null);
         setVisible(true);
     }

@@ -262,7 +262,6 @@ public class Department {
             return null;
         }
     }
-
     public ArrayList<Request> pesquisaPorEspaco(String espaco) {
         Hashtable<String, Request> conteudo = readRequestsGeneral();
         ArrayList<Request> relatorioEspaco = new ArrayList<>();

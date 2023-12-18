@@ -153,6 +153,7 @@ public class RegisterEventual extends JFrame{
         fieldData.setSelectionColor(Color.black);
         add(fieldData);
 
+
         JLabel exemploFinali = new JLabel("Ex: seminários, defesas TCC, palestras, provas");
         exemploFinali.setBounds(650,379,500,50);
         exemploFinali.setFont(new Font("Arial", Font.ITALIC, 12));

@@ -8,5 +8,6 @@ public class Main {
         Department department = new Department();
         department.clearFile();
         new LoginScreen();
+
     }
 }

@@ -27,6 +27,7 @@ public class Horario {
         this.dias = dias;
     }
 
+
     public String getTurnos() {
         return turnos;
     }

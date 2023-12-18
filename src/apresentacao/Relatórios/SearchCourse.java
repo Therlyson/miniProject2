@@ -22,6 +22,7 @@ public class SearchCourse extends JFrame {
         title.setForeground(Color.DARK_GRAY);
         add(title);
 
+
         JLabel name = new JLabel("Nome do curso: ");
         name.setBounds(70, 90, 200, 50);
         name.setFont(new Font("Arial", Font.ITALIC, 18));

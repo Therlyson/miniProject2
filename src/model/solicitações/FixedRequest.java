@@ -20,6 +20,7 @@ public class FixedRequest extends Request{
         this.disciplina = disciplina;
     }
 
+
     public String getDisciplina() {
         return disciplina;
     }

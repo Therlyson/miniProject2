@@ -71,6 +71,7 @@ public class GeneralRequests extends JFrame{
             }
         }
 
+
         DefaultTableModel tableModel = new DefaultTableModel(data.toArray(new Object[0][0]), columnNames);
         JTable table = new JTable(tableModel);
         table.setFont(new Font("Arial", Font.ITALIC, 15));
