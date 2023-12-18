@@ -85,6 +85,7 @@ public abstract class Request {
         return dataCadastro;
     }
 
+    //Método que testa se determinado espaço tem capacidade suficiente para uma determinada solicitação
     public void testEspace() throws ProjectExceptions {
         if(vagas > espaco.getCapacity()){
             throw new ProjectExceptions("ERRO! Quantidade de vagas maior que a capacidade do espaço!");
@@ -101,5 +102,4 @@ public abstract class Request {
                 (espaco != null ? ", Espaço Fisico: " + espaco.getName() : "") +
                 (dataCadastro != null ? ", Data de cadastro: " + dataCadastro : "");
     }
-
 }

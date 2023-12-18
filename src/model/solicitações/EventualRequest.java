@@ -1,30 +1,40 @@
 package model.solicitações;
-
 import model.Espaco;
 import model.Horario;
 import model.exceptions.ProjectExceptions;
-
 import java.time.LocalDate;
 
 public class EventualRequest extends Request{
-    private String finalidade;
+    private String purpose;
+    private LocalDate initial_date;
+    private LocalDate final_date;
 
-    public EventualRequest(Integer ano, String semestre, String curso, Integer vagas, Horario horario, String finalidade) {
+    public EventualRequest(Integer ano, String semestre, String curso, Integer vagas,
+                           Horario horario, String purpose, LocalDate initial_date, LocalDate final_date) {
         super(ano, semestre, curso, vagas, horario);
-        this.finalidade = finalidade;
+        this.purpose = purpose;
+        this.initial_date = initial_date;
+        this.final_date = final_date;
     }
 
-    public EventualRequest(Integer ano, String semestre, String curso, Integer vagas, Horario horario, Espaco espaco, LocalDate dataCadastro, String finalidade) {
+    public EventualRequest(Integer ano, String semestre, String curso, Integer vagas,
+                           Horario horario, Espaco espaco, LocalDate dataCadastro, String purpose, LocalDate initial_date, LocalDate final_date) {
         super(ano, semestre, curso, vagas, horario, espaco, dataCadastro);
-        this.finalidade = finalidade;
+        this.purpose = purpose;
+        this.initial_date = initial_date;
+        this.final_date = final_date;
     }
 
-    public String getFinalidade() {
-        return finalidade;
+    public String getPurpose() {
+        return purpose;
     }
 
-    public void setFinalidade(String finalidade) {
-        this.finalidade = finalidade;
+    public LocalDate getInitial_date() {
+        return initial_date;
+    }
+
+    public LocalDate getFinal_date() {
+        return final_date;
     }
 
     @Override
@@ -37,6 +47,8 @@ public class EventualRequest extends Request{
 
     @Override
     public String toString() {
-        return super.toString() + ", Finalidade: " + finalidade;
+        return super.toString() + ", Finalidade: " + purpose +
+                ", Data inicial: " + initial_date +
+                ", Data final: " + final_date;
     }
 }

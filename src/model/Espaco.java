@@ -1,9 +1,7 @@
 package model;
 
-import model.solicitações.Request;
-
 public class Espaco {
-    private String type;
+    private String type; //auditório ou sala de aula
     private Integer capacity;
     private String name;
     private String location;
